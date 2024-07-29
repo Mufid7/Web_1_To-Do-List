@@ -1,0 +1,73 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: Cascadia Code;
+   background-color: rgb(23, 23, 23);
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   color: white;
+}
+
+
+.container{
+   border: white solid 1px;
+   border-radius: 5px;
+   padding: 15px;
+   width: 400px;
+}
+
+h1{
+   color: orange;
+}
+
+input[type="text"]{
+   width: calc(100% - 22px);
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 5px;
+}
+
+button{
+   padding: 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button:hover {
+   background: orange;
+}
+
+ul{
+   list-style: none;
+   padding: 0;
+}
+
+li{
+   margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li .delete-button {
+   background: #dc3545;
+   color: white;
+   border: none;
+   padding: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+li .delete-button:hover {
+   background: #c82333;
+}
