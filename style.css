@@ -1,10 +1,10 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-body{
+body {
    font-family: Cascadia Code;
    background-color: rgb(23, 23, 23);
    margin: 0;
@@ -16,26 +16,25 @@ body{
    color: white;
 }
 
-
-.container{
+.container {
    border: white solid 1px;
    border-radius: 5px;
    padding: 15px;
    width: 400px;
 }
 
-h1{
+h1 {
    color: orange;
 }
 
-input[type="text"]{
+input[type="text"] {
    width: calc(100% - 22px);
    padding: 10px;
    margin: 10px 0;
    border-radius: 5px;
 }
 
-button{
+button {
    padding: 5px;
    border: none;
    border-radius: 5px;
@@ -46,26 +45,39 @@ button:hover {
    background: orange;
 }
 
-ul{
+ul {
    list-style: none;
    padding: 0;
 }
 
-li{
+li {
    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+li span {
+   flex-grow: 1;
+}
+
+li .edit-button, li .delete-button {
+   margin-left: 10px;
+}
+
+li .edit-button {
+   background: #ffc107;
+   color: white;
+}
+
+li .edit-button:hover {
+   background: #e0a800;
 }
 
 li .delete-button {
    background: #dc3545;
    color: white;
-   border: none;
-   padding: 5px;
-   border-radius: 5px;
-   cursor: pointer;
 }
 
 li .delete-button:hover {
